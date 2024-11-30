@@ -36,3 +36,57 @@
     transform: rotate(360deg);
   }
 }
+
+form{
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+}
+form input{
+  height: 40px;
+  flex-basis: 80%;
+}
+form button{
+  flex-basis: 20%;
+}
+.outer-div{
+  width: 1170px;
+  margin: auto;
+}
+.outer-div ul{
+  margin: 0px;
+  margin-top: 50px;
+  padding: 0px;
+  list-style: none;
+}
+.outer-div li{
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: left;
+  background-color: black;
+}
+
+.outer-div ul li span{
+  right: 20px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.completetodo{
+  text-decoration: line-through;
+  color: red !important;
+  background-color: yellow !important;
+}
+
+@media(max-width:768px){
+  form{
+    width: 75%;
+  }
+  .outer-div{
+    width: 80%;
+  }
+}
